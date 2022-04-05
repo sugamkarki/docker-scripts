@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pgsql:
+    container_name: mysql
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=user123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql

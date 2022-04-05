@@ -1,5 +1,5 @@
 #!/bin/bash
-docker run --rm -dit -e POSTGRES_PASSWORD=user123 --name pgsql -p 5432:5432 postgres:14
+docker run -dit -e POSTGRES_PASSWORD=user123 --name pgsql -p 5432:5432 postgres:14
 echo "Waiting for mysql engine to bootup. Pausing 25 seconds"
 sleep 25
 echo "Enter database name to create: "
